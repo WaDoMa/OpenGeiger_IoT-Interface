@@ -1,0 +1,25 @@
+#[pachube]
+#apiKey=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+#feedID=1234
+
+#[thingspeak]
+#apiKey=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+#[rrdtool]
+#rrdTool=/usr/local/bin/rrdtool
+#rrdDb=opengeiger.rrd
+#rrdPng=/home/server/DropBox/Public/data/opengeiger
+
+#[email]
+serverurl = smtp.gmail.com:587
+login = xxx
+password = xxx
+sender = xxx
+recipients  = xxx, xxx, xxx
+
+[alarm]
+threshold = 0.457 
+#Unit has to be "µSv/h!"
+#Source: https://www.mh-hannover.de/fileadmin/kliniken/diagnostische_radiologie/download/Strahlenschutz_2010.pdf; Slide 7 (average dose of 4 mSv/a in Germany)
+
+
